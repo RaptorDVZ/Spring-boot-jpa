@@ -1,0 +1,21 @@
+Server:
+  port: 8080
+#  <-- To change the default port of the web server in this case its from 8080 to 3000-->
+
+spring:
+  datasource:
+    url:
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  main:
+    web-application-type: servlet
+#  main:
+#    web-application-type: none  <-- To disable the server in thiś case its tomcat server-->
